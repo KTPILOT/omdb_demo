@@ -6,6 +6,7 @@ extension ScaffoldExtension on Widget {
       appBar: AppBar(
         title: Text(title),
       ),
+      body: this,
     );
   }
 }

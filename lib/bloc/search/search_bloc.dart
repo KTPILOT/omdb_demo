@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:omdb_demo/model/search_model.dart';
@@ -15,6 +17,7 @@ class SearchBloc extends Bloc<SearchEvent, SearchState> {
 
   void _getSearchData(SearchData searchData, Emitter<SearchState> emit) async {
     emit(SearchLoading());
+
     try {
       String movieName = searchData.title;
       SearchModel searchModel;

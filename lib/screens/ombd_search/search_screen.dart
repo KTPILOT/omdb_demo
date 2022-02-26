@@ -35,7 +35,8 @@ class _SearchPageState extends State<SearchPage> {
             decoration: InputDecoration(
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(10),
-              ),
+              ),focusColor: Colors.red,
+              hoverColor: Colors.green
             ),
           ),
         ),
