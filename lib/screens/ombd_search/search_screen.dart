@@ -19,9 +19,12 @@ class _SearchPageState extends State<SearchPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return Padding(
+      padding: const EdgeInsetsDirectional.only(start: 20, end: 20),
+      child:Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
+        const SizedBox(height: 150),
         Form(
           key: formKey,
           child: TextFormField(
@@ -40,6 +43,7 @@ class _SearchPageState extends State<SearchPage> {
             ),
           ),
         ),
+        const SizedBox(height: 20),
         InkWell(
           onTap: () {
             if (formKey.currentState!.validate()) {
@@ -57,11 +61,16 @@ class _SearchPageState extends State<SearchPage> {
             }
           },
           child: Container(
+            padding: const EdgeInsetsDirectional.only(top: 5, bottom: 5),
             width: MediaQuery.of(context).size.width * 0.35,
-            color: Colors.blue,
+            decoration: BoxDecoration(
+              color: Colors.blue,
+              borderRadius: BorderRadius.circular(10)
+            ),
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: const [
-                Icon(Icons.search, size: 20),
+                Icon(Icons.search, size: 30, color: Colors.white,),
                 Text(
                   'Search',
                   style: TextStyle(fontSize: 20, color: Colors.white),
@@ -71,6 +80,6 @@ class _SearchPageState extends State<SearchPage> {
           ),
         ),
       ],
-    ).appBarScaffold(context: context, title: StringRes().search);
+    ),).appBarScaffold(context: context, title: StringRes().search);
   }
 }

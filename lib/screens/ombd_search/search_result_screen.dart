@@ -17,7 +17,7 @@ class ResultScreen extends StatelessWidget {
               ListTile(
                 title: Text(state.searchModel.search![index].title.toString()),
                 trailing: Image.network(
-                    state.searchModel.search![index].poster.toString()
+                    state.searchModel.search![index].poster.toString(),
                 ),
               ),
               separatorBuilder: (context, index) =>
