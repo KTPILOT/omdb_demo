@@ -51,7 +51,7 @@ class _SearchPageState extends State<SearchPage> {
                 builder: (context) {
                   return BlocProvider(
                     create: (context) =>
-                        SearchBloc()..add(SearchData(searchController.text)),
+                        SearchBloc()..add(SearchData(searchController.text, 1)),
                     child: ResultScreen(
                       title: searchController.text,
                     ),

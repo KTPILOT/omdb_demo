@@ -6,8 +6,9 @@ abstract class SearchEvent extends Equatable {
 
 class SearchData extends SearchEvent {
   String title;
+  int page;
 
-  SearchData(this.title);
+  SearchData(this.title, this.page);
 
   @override
   List<Object?> get props => [];

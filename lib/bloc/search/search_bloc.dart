@@ -20,8 +20,9 @@ class SearchBloc extends Bloc<SearchEvent, SearchState> {
 
     try {
       String movieName = searchData.title;
+      int pageNumber =  searchData.page;
       SearchModel searchModel;
-      searchModel = await ApiServices().getSearchData(title: movieName);
+      searchModel = await ApiServices().getSearchData(title: movieName, page: pageNumber);
       if (searchModel != null) {
         emit(SearchSuccess(searchModel));
       } else {
