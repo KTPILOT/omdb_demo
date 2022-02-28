@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "740376020317",
+    "project_id": "omdb-demo",
+    "storage_bucket": "omdb-demo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:740376020317:android:78729ff7feb0660b8014b4",
+        "android_client_info": {
+          "package_name": "com.example.omdb_demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "740376020317-hil9457i8a338n9lkr288ghgkdlr3rj2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxcTPMQsAuYRWHnHlqXlcgHU0JdNTHyYg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "740376020317-hil9457i8a338n9lkr288ghgkdlr3rj2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
